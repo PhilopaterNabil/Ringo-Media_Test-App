@@ -6,8 +6,8 @@ import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_submi
 import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_text_field.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_password_reset_prompt.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_quick_login.dart';
-import 'package:ringo_media/features/auth/presentation/widgets/custom_text_button_nav.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_secondary_login_text.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_text_button_nav.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_text_title.dart';
 
 class CustomAuthFormBody extends StatelessWidget {
@@ -43,7 +43,7 @@ class CustomAuthFormBody extends StatelessWidget {
             ),
           ),
           const CustomPasswordResetPrompt(),
-          const CustomAuthSubmitButton(),
+          const CustomAuthSubmitButton(titleButton: 'Login'),
           const SizedBox(height: 24),
           const CustomSecondaryLoginText(),
           const SizedBox(height: 24),

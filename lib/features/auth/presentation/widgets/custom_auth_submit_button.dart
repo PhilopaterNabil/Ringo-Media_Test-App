@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomAuthSubmitButton extends StatelessWidget {
-  const CustomAuthSubmitButton({super.key});
+  const CustomAuthSubmitButton({super.key, required this.titleButton});
+
+  final String titleButton;
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +18,9 @@ class CustomAuthSubmitButton extends StatelessWidget {
       minWidth: double.infinity,
       height: 56,
       onPressed: () {},
-      child: const Text(
-        "Login",
-        style: TextStyle(
+      child: Text(
+        titleButton,
+        style: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w700,
           color: Colors.white,
