@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:ringo_media/widgets/custom_auth_app_bar.dart';
 import 'package:ringo_media/widgets/custom_auth_form_body.dart';
 
-class CustomLoginScreenBody extends StatelessWidget {
+class CustomLoginScreenBody extends StatefulWidget {
   const CustomLoginScreenBody({
     super.key,
-    required this.obscureText,
-    required this.onPressedVisibilityPassword,
   });
 
-  final bool obscureText;
-  final void Function() onPressedVisibilityPassword;
+  @override
+  State<CustomLoginScreenBody> createState() => _CustomLoginScreenBodyState();
+}
 
+class _CustomLoginScreenBodyState extends State<CustomLoginScreenBody> {
+  bool _obscureText = true;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -27,8 +28,12 @@ class CustomLoginScreenBody extends StatelessWidget {
               ),
               const SizedBox(height: 40),
               CustomAuthFormBody(
-                obscureText: obscureText,
-                onPressedVisibilityPassword: onPressedVisibilityPassword,
+                obscureText: _obscureText,
+                onPressedVisibilityPassword: () {
+                  setState(() {
+                    _obscureText = !_obscureText;
+                  });
+                },
               ),
             ],
           ),
