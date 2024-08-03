@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ringo_media/screens/login_screen.dart';
+import 'package:ringo_media/features/auth/presentation/screens/login_screen.dart';
 
 void main() {
   runApp(const RingoMedia());

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ringo_media/widgets/custom_auth_submit_button.dart';
-import 'package:ringo_media/widgets/custom_auth_text_field.dart';
-import 'package:ringo_media/widgets/custom_password_reset_prompt.dart';
-import 'package:ringo_media/widgets/custom_quick_login.dart';
-import 'package:ringo_media/widgets/custom_register_prompt.dart';
-import 'package:ringo_media/widgets/custom_secondary_login_text.dart';
-import 'package:ringo_media/widgets/custom_text_title.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_submit_button.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_text_field.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_password_reset_prompt.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_quick_login.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_register_prompt.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_secondary_login_text.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_text_title.dart';
 
 class CustomAuthFormBody extends StatelessWidget {
   const CustomAuthFormBody({

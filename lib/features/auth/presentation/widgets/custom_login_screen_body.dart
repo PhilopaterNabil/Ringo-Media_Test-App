@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ringo_media/widgets/custom_auth_app_bar.dart';
-import 'package:ringo_media/widgets/custom_auth_form_body.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_app_bar.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_form_body.dart';
 
 class CustomLoginScreenBody extends StatefulWidget {
   const CustomLoginScreenBody({

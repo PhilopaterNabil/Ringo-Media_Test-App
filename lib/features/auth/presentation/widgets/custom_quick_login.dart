@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ringo_media/widgets/custom_social_login_button.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_social_login_button.dart';
 
 class CustomQuickLogIn extends StatelessWidget {
   const CustomQuickLogIn({
