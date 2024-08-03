@@ -3,9 +3,7 @@ import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_app_b
 import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_form_body.dart';
 
 class CustomLoginScreenBody extends StatefulWidget {
-  const CustomLoginScreenBody({
-    super.key,
-  });
+  const CustomLoginScreenBody({super.key});
 
   @override
   State<CustomLoginScreenBody> createState() => _CustomLoginScreenBodyState();

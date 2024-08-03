@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:ringo_media/features/auth/presentation/screens/signup_screen.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_submit_button.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_auth_text_field.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_password_reset_prompt.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_quick_login.dart';
-import 'package:ringo_media/features/auth/presentation/widgets/custom_register_prompt.dart';
+import 'package:ringo_media/features/auth/presentation/widgets/custom_text_button_nav.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_secondary_login_text.dart';
 import 'package:ringo_media/features/auth/presentation/widgets/custom_text_title.dart';
 
@@ -50,9 +53,10 @@ class CustomAuthFormBody extends StatelessWidget {
             onPressedApple: () {},
           ),
           const SizedBox(height: 40),
-          CustomRegisterPrompt(
-            onPressed: () {},
+          CustomTextButtonNav(
+            onPressed: () => Get.to(() => const SignUpScreen()),
             name: 'Register Here',
+            subject: 'Don\'t',
           )
         ],
       ),

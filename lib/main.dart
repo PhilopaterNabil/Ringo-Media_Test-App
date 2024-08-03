@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:ringo_media/features/auth/presentation/screens/login_screen.dart';
 
 void main() {
@@ -10,7 +11,7 @@ class RingoMedia extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Ringo Media Test',
       theme: ThemeData(
