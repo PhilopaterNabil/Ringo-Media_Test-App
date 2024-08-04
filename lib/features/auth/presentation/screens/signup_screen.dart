@@ -20,7 +20,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      // body: CustomLoginScreenBody(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
